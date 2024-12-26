@@ -46,3 +46,4 @@ docs/
 
 # Local environment-specific settings
 *.local.env
+.env
