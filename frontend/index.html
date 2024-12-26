@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Chat System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">FAQ Chat System</div>
+    <div class="chat-body" id="chatBody">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chat-footer">
+        <select id="site" name="site" required>
+            <option value="" disabled selected>Select a site</option>
+            <option value="bankkart">Bankkart</option>
+            <option value="edevlet">e-Devlet</option>
+        </select>
+      <input type="text" id="query" placeholder="Type your question..." required />
+      <button id="sendButton">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
