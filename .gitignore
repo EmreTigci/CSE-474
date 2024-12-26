@@ -45,4 +45,4 @@ build/
 docs/
 
 # Local environment-specific settings
-*.local
+*.local.env
