@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ Chat System</title>
+  <!-- Metadata -->
+  <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page scales well on mobile devices -->
+  <title>FAQ Chat System</title> <!-- Sets the title of the webpage -->
+  
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Main container for the chat application -->
   <div class="chat-container">
-    <div class="chat-header">FAQ Chat System</div>
-    <div class="chat-body" id="chatBody">
-      <!-- Messages will appear here -->
+    
+    <!-- Header section -->
+    <div class="chat-header">
+      <h1>FAQ Chat System</h1> <!-- Main heading for the application -->
+      <span class="subtext">Powered by AI</span> <!-- A subtext indicating the system is AI-powered -->
     </div>
+
+    <!-- Body section where chat messages will appear -->
+    <div class="chat-body" id="chatBody">
+      <!-- Chat messages will dynamically appear here via JavaScript -->
+    </div>
+
+    <!-- Footer section containing the input and controls -->
     <div class="chat-footer">
-        <select id="site" name="site" required>
-            <option value="" disabled selected>Select a site</option>
-            <option value="bankkart">Bankkart</option>
-            <option value="edevlet">e-Devlet</option>
-        </select>
-      <input type="text" id="query" placeholder="Type your question..." required />
-      <button id="sendButton">Send</button>
+      <!-- Dropdown to select a site -->
+      <select id="site" name="site" required>
+        <option value="" disabled selected>Select a site</option> <!-- Placeholder option -->
+        <option value="bankkart">Bankkart</option> <!-- Option for Bankkart site -->
+        <option value="edevlet">e-Devlet</option> <!-- Option for e-Devlet site -->
+      </select>
+      
+      <!-- Input field for user to type a question -->
+      <input 
+        type="text" 
+        id="query" 
+        placeholder="Type your question..." 
+        required 
+        aria-label="Question input" <!-- Accessibility label for screen readers -->
+      />
+
+      <!-- Button to send the user's question -->
+      <button id="sendButton" aria-label="Send your question">Send</button> <!-- Accessibility label for screen readers -->
     </div>
   </div>
 
+  <!-- Link to external JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
